@@ -1,0 +1,39 @@
+{
+  "name": "react-redux-saga-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.3",
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "fs": "^0.0.1-security",
+    "path": "0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "styled": "^1.0.0",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "http-proxy": "^1.17.0",
+    "react-scripts": "1.1.4",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack --config webpack.config.js",
+    "start:server": "node server.js",
+    "start:webpack:mock": "webpack-dev-server --config          webpack.devserver.mock.config.js",
+    "start:webpack:proxy": "webpack-dev-server --config      webpack.devserver.proxy.config.js",
+    "start:express:mock": "node express.mock.js",
+    "start:express:proxy": "node express.proxy.js"
+  }
+}
