@@ -1,5 +1,9 @@
 ## Usage
 
+Install node_modules:
+```
+npm install
+
 To build an application:
 ```
 npm run build
